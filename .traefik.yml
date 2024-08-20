@@ -1,0 +1,29 @@
+# The name of your plugin as displayed in the Traefik Pilot web UI.
+displayName: Retarded regex Redirect With Status Code
+
+# For now, `middleware` is the only type available.
+type: middleware
+
+# The import path of your plugin.
+import: github.com/supergoudvis116/regex-redirect-joule
+
+# A brief description of what your plugin is doing.
+summary: Retarded redirect is a Traefik plugin to redirect a list with status code and put location as the last header.
+
+# Medias associated to the plugin (optional)
+iconPath: icon.png
+#bannerPath: banner.png
+
+# Configuration data for your plugin.
+# This is mandatory,
+# and Traefik Pilot will try to execute the plugin with the data you provide as part of its startup validity tests.
+testData:
+    debug: false
+    redirects:
+        - regex: /redirect
+          replacement: /ok
+          statusCode: 302
+        - regex: ^/gone$
+          statusCode: 410
+        - regex: ^/not-found$
+          statusCode: 404
