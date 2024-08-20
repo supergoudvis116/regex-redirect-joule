@@ -1,4 +1,4 @@
-package traefik_plugin_redirect
+package regex_redirect_joule
 
 import (
 	"context"
