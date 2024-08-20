@@ -1,3 +1,3 @@
-module github.com/evolves-fr/traefik-plugin-redirect
+module supergoudvis116/regex-redirect-joule
 
 go 1.17
