@@ -1,3 +1,3 @@
-module supergoudvis116/regex-redirect-joule
+module github.com/supergoudvis116/regex-redirect-joule
 
 go 1.17
