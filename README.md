@@ -1,6 +1,6 @@
 # Traefik Plugin - Redirect
 
-`Redirect` is a Traefik plugin to redirect a list with status code.
+`Retaded Redirect` is a Traefik plugin to redirect a list with status code but make sure to put the location header as last due to some legacy devices acting all weird like their original programmers :)
 
 Based on :
 - [Traefik documentation](https://doc.traefik.io/traefik-pilot/plugins/overview/)
