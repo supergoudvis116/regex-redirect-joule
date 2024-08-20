@@ -23,7 +23,7 @@ Into Traefik static configuration
 [experimental.plugins]
   [experimental.plugins.traefik-plugin-redirect]
     moduleName = "github.com/supergoudvis116/regex-redirect-joule"
-    version = "v0.1.2"
+    version = "v0.1.3"
 ```
 
 ### YAML
@@ -39,7 +39,7 @@ experimental:
   plugins:
     traefik-plugin-redirect:
       moduleName: "github.com/supergoudvis116/regex-redirect-joule"
-      version: "v0.1.2"
+      version: "v0.1.3"
 ```
 
 ### CLI
@@ -47,7 +47,7 @@ experimental:
 --entryPoints.web.address=:80
 --pilot.token=xxxxxxxxx
 --experimental.plugins.traefik-plugin-redirect.modulename=github.com/supergoudvis116/regex-redirect-joule
---experimental.plugins.traefik-plugin-redirect.version=v0.1.2
+--experimental.plugins.traefik-plugin-redirect.version=v0.1.3
 ```
 
 ## Configuration
